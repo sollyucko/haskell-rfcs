@@ -24,17 +24,17 @@ Detailed design
 
 This would involve renaming abbreviated tokens within sections 2, 3, 4, 5, 8, 10, and 12, between `@@@`s. (I am assuming that none of the libraries have syntax specifications. Please let me know if I somehow missed any sections.) This change only affects documentation. Here are some examples:
 
-Current   | Preffered                        | Compromise
---------- | -------------------------------- | ------------------
-`qvarid`  | `qualified-variable`             | `qualVar`
-`qconid`  | `qualified-constructor`          | `qualConstr`
-`qtycon`  | `qualified-type-constructor`     | `qualTypeConstrID`
-`qtycls`  | `qualified-type-class`           | `qualTypeClass`
-`qvarsym` | `qualified-variable-symbol`      | `qualVarSym`
-`qconsym` | `qualified-constructor-symbol`   | `qualConstrSym`
-`gtycon`  | `generalized-type-constructor`   | `generalTypeConstr`
-`qconop`  | `qualified-constructor-operator` | `qualConstrOp`
-`chname`  | `c-header-filename`              | `cHeadName`
+| Current   | Preffered                        | Compromise          |
+| --------- | -------------------------------- | ------------------- |
+| `qvarid`  | `qualified-variable`             | `qualVar`           |
+| `qconid`  | `qualified-constructor`          | `qualConstr`        |
+| `qtycon`  | `qualified-type-constructor`     | `qualTypeConstrID`  |
+| `qtycls`  | `qualified-type-class`           | `qualTypeClass`     |
+| `qvarsym` | `qualified-variable-symbol`      | `qualVarSym`        |
+| `qconsym` | `qualified-constructor-symbol`   | `qualConstrSym`     |
+| `gtycon`  | `generalized-type-constructor`   | `generalTypeConstr` |
+| `qconop`  | `qualified-constructor-operator` | `qualConstrOp`      |
+| `chname`  | `c-header-filename`              | `cHeadName`         |
 
 
 #########
