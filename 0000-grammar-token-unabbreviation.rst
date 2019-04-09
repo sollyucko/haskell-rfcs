@@ -22,19 +22,21 @@ It would make Haskell's structure/syntax/grammar much easier to understand, espe
 Detailed design
 ###############
 
-This would involve renaming abbreviated tokens within sections 2, 3, 4, 5, 8, 10, and 12, between `@@@`s. (I am assuming that none of the libraries have syntax specifications. Please let me know if I somehow missed any sections.) This change only affects documentation. Here are some examples:
+This would involve renaming abbreviated tokens within sections 2, 3, 4, 5, 8, 10, and 12, between ``@@@``s. (I am assuming that none of the libraries have syntax specifications. Please let me know if I somehow missed any sections.) This change only affects documentation. Here are some examples:
 
-| Current   | Preffered                        | Compromise          |
-| --------- | -------------------------------- | ------------------- |
-| `qvarid`  | `qualified-variable`             | `qualVar`           |
-| `qconid`  | `qualified-constructor`          | `qualConstr`        |
-| `qtycon`  | `qualified-type-constructor`     | `qualTypeConstrID`  |
-| `qtycls`  | `qualified-type-class`           | `qualTypeClass`     |
-| `qvarsym` | `qualified-variable-symbol`      | `qualVarSym`        |
-| `qconsym` | `qualified-constructor-symbol`   | `qualConstrSym`     |
-| `gtycon`  | `generalized-type-constructor`   | `generalTypeConstr` |
-| `qconop`  | `qualified-constructor-operator` | `qualConstrOp`      |
-| `chname`  | `c-header-filename`              | `cHeadName`         |
+=========== ================================== ==================
+Current     Preffered                          Compromise
+=========== ================================== ==================
+``qvarid``  ``qualified-variable``             ``qualVar``
+``qconid``  ``qualified-constructor``          ``qualConstr``
+``qtycon``  ``qualified-type-constructor``     ``qualTypeConstrID``
+``qtycls``  ``qualified-type-class``           ``qualTypeClass``
+``qvarsym`` ``qualified-variable-symbol``      ``qualVarSym``
+``qconsym`` ``qualified-constructor-symbol``   ``qualConstrSym``
+``gtycon``  ``generalized-type-constructor``   ``generalTypeConstr``
+``qconop``  ``qualified-constructor-operator`` ``qualConstrOp``
+``chname``  ``c-header-filename``              ``cHeadName``
+=========== ================================== ==================
 
 
 #########
@@ -55,7 +57,7 @@ I do not know of any similar, existing proposals. Two things that could be used 
 Unresolved questions
 ####################
 
-The main question is what the new tokens should be. The global issues are whether the tokens should be partially abbreviated or not and what casing style to use. I personally prefer either `snake_case` or `kebab-case`, but `camelCase` seems to be the only one used other than `abrvtdlwrcs` (abbreviated lowercase).
+The main question is what the new tokens should be. The global issues are whether the tokens should be partially abbreviated or not and what casing style to use. I personally prefer either ``snake_case`` or ``kebab-case``, but ``camelCase`` seems to be the only one used other than ``abrvtdlwrcs`` (abbreviated lowercase).
 
 
 ################
